@@ -1,0 +1,52 @@
+
+
+/* Estilo do contêiner do slideshow */
+.slideshow {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: relative; /* Para posicionar os botões de controle */
+  }
+  
+  /* Estilo das imagens nos slides */
+  .slideshow img {
+    width: 70%;
+    height: auto;
+  }
+  
+  /* Estilo dos slides */
+  .slide {
+    flex: 0 0 auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease;
+  }
+  
+  /* Estilo dos controles */
+  .controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  
+  /* Estilo dos botões */
+  .controls button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+  }
+  
+  /* Efeito hover nos botões */
+  .controls button:hover {
+    background-color: #0056b3;
+  }
+  
